@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css"/>
+    <title>Coding Quiz</title>
+</head>
+<body>
+    <header>
+        <!-- High Scores EL -->
+        <h2>
+            <a href="">View High Scores</a>
+        </h2>
+        <!-- Timer El -->
+        <h2 id="timer-section" class="timer-area-sc">Time: <span id="timer"> </span></h2>
+    </header>
+    
+    <!-- Prompt Section -->
+    <div id="main-card">
+        <!-- Intro Prompt-->
+        <section id="intro" class="hidden">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Some text about the quiz</p>
+            <button name="start-btn" id="start-btn">Start Quiz</button>
+        </section>
+        <!-- Question format Prompt -->
+        <section id="question-format-sc" class="hidden">
+            <h2 id="question">This is a sample question</h2>
+            <ul id="answers">
+                <li>
+                    <button id="answer-btn-1" type="submit">Answer 1</button>
+                </li>
+                <li>
+                    <button id="answer-btn-2" type="submit">Answer 2</button>
+                </li>
+                <li>
+                    <button id="answer-btn-3" type="submit">Answer 3</button>
+                </li>
+                <li>
+                    <button id="answer-btn-4" type="submit">Answer 4</button>
+                </li>
+            </ul>
+        </section>
+        <!-- End of quiz Prompt-->
+        <section id="end-quiz-sc" class="hidden">
+            <h2>All Done!</h2>
+            <p>Your final score is:<span id="final-score"></span></p>
+            <p>Enter Initials:</p>
+            <form id="high-score-form">
+            <textarea id="initials-field" placeholder="Initials Here"></textarea>
+            <button id="submit-initials">Enter</button>
+            </form>
+            <button id="go-back">Back to Start</button>
+            <button id="clear-scores">Clear all Scores</button>
+        </section>
+    </div>      
+
+    
+    <script src="javascript/javascript.js"></script>
+</body>
+</html>

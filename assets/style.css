@@ -1,0 +1,30 @@
+.hidden {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+}
+
+#main-card {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#intro h1 {
+    align-items: center;
+}
+
+#intro p {
+    text-align: center;
+}
+
+#intro button {
+    align-items: center;
+    margin: auto;
+    display: block;
+    
+}
