@@ -11,7 +11,8 @@
     <header>
         <!-- High Scores EL -->
         <h2>
-            <a href="">View High Scores</a>
+            <!-- <a href="">View High Scores</a> -->
+            <button type="button" id="high-scores-button">View High Scores</button>         
         </h2>
         <!-- Timer El -->
         <h2 id="timer-section" class="timer-area-sc">Time: <span id="timer"> </span></h2>
@@ -47,14 +48,26 @@
         <section id="end-quiz-sc" class="hidden">
             <h2>All Done!</h2>
             <p>Your final score is:<span id="final-score"></span></p>
-            <p>Enter Initials:</p>
             <form id="high-score-form">
-            <textarea id="initials-field" placeholder="Initials Here"></textarea>
-            <button id="submit-initials">Enter</button>
+            <textarea id="initials-field" placeholder="Enter Initials Here"></textarea>
+            <button id="submit-initials">Save my Score</button>
             </form>
             <button id="go-back">Back to Start</button>
             <button id="clear-scores">Clear all Scores</button>
         </section>
+        <!-- High score Prompt -->
+        <section id="high-score-sc" class="hidden">
+            <h2>High Scores</h2>
+            <!-- <ul id="high-score-list"></ul> -->
+            <table id="high-scores-tbl">
+                <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </table>
+            <button type="button" id="back-to-main">Return</button>
+        </section>
+
     </div>      
 
     
